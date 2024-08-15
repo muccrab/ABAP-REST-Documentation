@@ -1,0 +1,35 @@
+site_name: Rest Service Documentation
+dev_addr: 127.0.0.1:8080
+nav:
+  - Home:
+    - About: index.md
+    - Service: 
+        - Home: service.md
+        - Classes:
+            - ZCL_REST_ROUTER: classes/ZCL_REST_ROUTER.md
+            - ZCL_REST_SUBROUTER_SMART: classes/ZCL_REST_SUBROUTER_SMART.md
+            - ZCL_REST_ROUTER_HELPER: classes/ZCL_REST_ROUTER_HELPER.md
+            - ZCL_REST_SUBROUTER_FACTORY: classes/ZCL_REST_SUBROUTER_FACTORY.md
+            - ZCL_REST_ENDPOINT_FACTORY: classes/ZCL_REST_ENDPOINT_FACTORY.md
+        - Interfaces:
+            - ZIF_ENDPOINT: interfaces/ZIF_ENDPOINT.md
+            - ZIF_REST_SECURITY_WRAPPER: interfaces/ZIF_REST_SECURITY_WRAPPER.md
+            - ZIF_REST_SUBROUTER: interfaces/ZIF_REST_SUBROUTER.md
+            - ZIF_REST_ROUTER_HELPER: interfaces/ZIF_REST_ROUTER_HELPER.md
+            - ZIF_REST_SUBROUTER_FACTORY: interfaces/ZIF_REST_SUBROUTER_FACTORY.md
+            - ZIF_REST_ENDPOINT_FACTORY: interfaces/ZIF_REST_ENDPOINT_FACTORY.md
+        - Tables:
+            - ZCT_ENDPOINT: tables/ZCT_ENDPOINT.md
+            - ZCT_SERVICE: tables/ZCT_SERVICE.md
+        - Exception Classes:
+            - ZCX_ST_REST_SERVER_FAIL: exclass/ZCX_ST_REST_SERVER_FAIL.md
+            - ZCX_ST_REST_SERVER_CL_ERROR: exclass/ZCX_ST_REST_SERVER_CL_ERROR.md
+    - Client:
+        - Home: client.md
+theme: readthedocs
+plugins:
+  - search:
+      enabled: true
+      
+extra_css: 
+    - style.css
